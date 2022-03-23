@@ -14,15 +14,15 @@ body{
 }
 .wrapper{
  transition: height .7s ease;
- height: 200px;
+ height: 260px;
  border: .2rem groove #3a2f36;
  border-radius: .5rem;
  max-width: 410px;
  background-color: #f0f0f0;
  padding: 1.3rem;
 }
-.wrapper active{
- height: 600px;
+.wrapper.active{
+ height: 530px;
 }
 header h1{
  color: #9aaa06;
@@ -69,4 +69,9 @@ border: 1px solid #999;
  align-items: center;
  justify-content: center;
  border: 1px solid #ccc;
+}
+.wrapper.active .qrcode{
+ opacity: 1;
+ pointer-events:auto;
+ transition: opacity 0.5s 0.05s ease;
 }
